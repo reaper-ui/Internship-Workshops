@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UM JavaScript Seminar</title>
+    <link rel="stylesheet" href="sem.css">
+</head>
+
+<body>
+
+    <h1><center>UM JavaScript Seminar</center></h1>
+    <hr>
+    <div class="todo-form">
+        <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+            <div>
+                <label>To-Do Item*</label><label class="validation-error hide" id="todoItemValidationError">This field is required.</label>
+                <input type="text" name="todoItem" id="todoItem">
+            </div>
+            <div class="form-action-buttons">
+                <input type="submit" value="Add">
+            </div>
+        </form>
+    </div>
+    <br/>
+    <div class="todos-table">
+        <table class="list" id="todoList">
+            <thead>
+                <tr>
+                    <th>To-Do Item</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="jsv.js"></script>
+</body>
+</html>
